@@ -41,6 +41,45 @@ pip install -r requirements.txt
 python leg_test_kinematics.py
 ```
 
+## Example Visualization
+
+When you run the script, you'll see a 3D visualization like this:
+
+![Leg Kinematics Visualization](img/leg_visualization.png)
+
+### Understanding the Visualization
+
+
+1. **Joint Colors**:
+   - Red: Coxa joint (base)
+   - Green: Femur joint (middle)
+   - Blue: Tibia joint (end)
+   - Purple: End effector (tip)
+
+2. **Body Outline**: Black dashed lines show the hexapod body frame
+3. **Angles**: θ1, θ2, θ3 show the current joint angles
+4. **Coordinates**: End effector position is shown in (x, y, z)
+
+## Leg Configuration
+
+The hexapod has 6 legs arranged as follows:
+
+- LEG1: Right front
+- LEG2: Left front
+- LEG3: Left middle
+- LEG4: Left rear
+- LEG5: Right rear
+- LEG6: Right middle
+
+## Features
+
+The 3D visualization includes:
+- Joint positions and connections
+- Joint angles
+- End effector coordinates
+- Body outline
+- Leg mounting points
+
 ## Troubleshooting
 
 If you encounter installation issues:
@@ -59,33 +98,6 @@ python -m venv venv
 ```bash
 python -m pip install -r requirements.txt
 ```
-
-## Leg Configuration
-
-The hexapod has 6 legs arranged as follows:
-
-- LEG1: Right front
-- LEG2: Left front
-- LEG3: Left middle
-- LEG4: Left rear
-- LEG5: Right rear
-- LEG6: Right middle
-
-## Visualization
-
-The 3D visualization includes:
-- Joint positions and connections
-- Joint angles
-- End effector coordinates
-- Body outline
-- Leg mounting points
-
-The plot shows:
-- Red: Coxa joint
-- Green: Femur joint
-- Blue: Tibia joint
-- Purple: End effector
-- Black dashed lines: Body outline
 
 ## Contributing
 
